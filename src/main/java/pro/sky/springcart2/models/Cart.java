@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-
-    private List<CartItem> items;
+    private final List<CartItem> items;
 
     public Cart() {
         items = new ArrayList<>();
     }
 
-    public void addItem(CartItem item) {
-        items.add(item);
+    public void addItem(int id) {
+        items.add(new CartItem(id));
     }
 
     public List<CartItem> getItems() {

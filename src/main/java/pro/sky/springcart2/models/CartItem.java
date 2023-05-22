@@ -1,18 +1,20 @@
 package pro.sky.springcart2.models;
 
 public class CartItem {
-    private long itemId;
+    private int id;
 
-    public CartItem(long itemId) {
-        this.itemId = itemId;
+    public CartItem() {
     }
 
-    public long getItemId() {
-        return itemId;
+    public CartItem(int id) {
+        this.id = id;
     }
 
-    public void setItemId(long itemId) {
-        this.itemId = itemId;
+    public int getId() {
+        return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 }
